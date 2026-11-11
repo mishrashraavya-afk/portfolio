@@ -1,0 +1,496 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<a href="The Curiosity Engine.html" style="position:fixed;right:12px;bottom:12px;z-index:60;background:#0b7f86;color:#fff;padding:10px 14px;border-radius:4px;font:600 13px sans-serif;text-decoration:none">Enter the 3D facility →</a>
+<title>Shraavya Mishra — Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout concept: a laboratory atrium. A live signal field opens the page, rooms (dossiers) hang off it, and a ledger at the back lists every claim with its evidence state. */
+:root{
+  --bg:#eef1f5; --surface:#ffffff; --ink:#101a2e; --muted:#4b586f; --line:#cdd5e1;
+  --neural:#0b7f86; --neural-soft:#d6eeee;
+  --molecular:#b86a00; --molecular-soft:#f6e6cc;
+  --signal:#2f4bd1;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gutter-l:max(16px,env(safe-area-inset-left,0px));
+  --gutter-r:max(16px,env(safe-area-inset-right,0px));
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0a1120; --surface:#111b31; --ink:#e8edf7; --muted:#9aa8c2; --line:#26344f;
+  --neural:#4fd1d6; --neural-soft:#0f2f3a;
+  --molecular:#f0a640; --molecular-soft:#38280f;
+  --signal:#8da0ff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0a1120; --surface:#111b31; --ink:#e8edf7; --muted:#9aa8c2; --line:#26344f;
+  --neural:#4fd1d6; --neural-soft:#0f2f3a;
+  --molecular:#f0a640; --molecular-soft:#38280f;
+  --signal:#8da0ff; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;
+  padding-block:0;padding-left:var(--gutter-l);padding-right:var(--gutter-r);margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:var(--signal)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1080px;margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 12px;z-index:50}
+.skip:focus{left:8px}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line);
+  margin-inline:calc(-1*var(--gutter-l)) calc(-1*var(--gutter-r));padding-inline:var(--gutter-l) var(--gutter-r)}
+.bar{display:flex;align-items:center;gap:16px;min-height:56px;flex-wrap:wrap;padding-block:6px}
+.brand{font-family:var(--display);font-weight:800;letter-spacing:-.01em;margin-right:auto;color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:4px 18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.06em;padding:6px 0;display:inline-block;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--neural)}
+.theme{font:inherit;font-family:var(--mono);font-size:12px;background:none;color:var(--ink);border:1px solid var(--line);padding:6px 10px;cursor:pointer;border-radius:3px}
+
+/* atrium */
+.atrium{position:relative;margin-inline:calc(-1*var(--gutter-l)) calc(-1*var(--gutter-r));padding-inline:var(--gutter-l) var(--gutter-r);border-bottom:1px solid var(--line);overflow:hidden}
+#field{position:absolute;inset:0;width:100%;height:100%;display:block}
+.atrium .wrap{position:relative;padding-block:64px 48px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,9vw,6.4rem);line-height:.95;letter-spacing:-.035em;margin:0;text-wrap:balance;max-width:12ch}
+h1 span{color:var(--neural)}
+.lede{max-width:56ch;font-size:1.15rem;margin:22px 0 0}
+.lede b{font-weight:600}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:12px 16px;border:1px solid var(--ink);color:var(--ink);background:var(--bg);border-radius:3px;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--neural)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:34px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+section{padding-block:72px 8px}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(1.8rem,4.5vw,2.8rem);letter-spacing:-.025em;line-height:1.05;margin:0 0 12px;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:1.35rem;letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance}
+.intro{max-width:62ch;color:var(--muted);margin:0 0 28px}
+
+/* status chips: shape + text, never colour alone */
+.chip{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;padding:3px 8px;border:1px solid var(--line);border-radius:2px;background:var(--surface);color:var(--ink);white-space:nowrap}
+.chip::before{content:"";width:8px;height:8px;border:1.5px solid currentColor}
+.chip.ongoing::before{background:currentColor;border-radius:50%;border-radius:50%}
+.chip.ongoing{color:var(--neural)}
+.chip.proposed::before{border-style:dashed;border-radius:50%}
+.chip.proposed{color:var(--molecular)}
+.chip.published::before{background:currentColor}
+.chip.published{color:var(--signal)}
+.chip.listed::before{transform:rotate(45deg)}
+.chip.listed{color:var(--muted)}
+
+/* rooms */
+.rooms{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;list-style:none;padding:0;margin:0}
+.room a{display:flex;flex-direction:column;gap:10px;height:100%;padding:18px;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:var(--ink);border-radius:4px;border-top-width:4px}
+.room.n a{border-top-color:var(--neural)} .room.m a{border-top-color:var(--molecular)} .room.s a{border-top-color:var(--signal)}
+.room a:hover{transform:translateY(-2px)}
+.room .k{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.room strong{font-family:var(--display);font-size:1.25rem;line-height:1.15}
+.room p{margin:0;color:var(--muted);font-size:.93rem}
+
+/* dossiers */
+.dossier{background:var(--surface);border:1px solid var(--line);border-radius:4px;margin-top:28px;overflow:hidden}
+.dossier>header{padding:24px 24px 18px;border-bottom:1px solid var(--line)}
+.dossier.n>header{background:linear-gradient(90deg,var(--neural-soft),transparent 70%)}
+.dossier.m>header{background:linear-gradient(90deg,var(--molecular-soft),transparent 70%)}
+.dossier h3{font-size:clamp(1.5rem,3.4vw,2rem);margin-top:10px}
+.sub{margin:0;color:var(--muted);max-width:60ch}
+.meta{display:flex;gap:8px;flex-wrap:wrap}
+dl.facts{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);margin:0}
+dl.facts dt,dl.facts dd{padding:14px 24px;border-bottom:1px solid var(--line);margin:0;min-width:0}
+dl.facts dt{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding-right:8px}
+dl.facts dd{max-width:68ch}
+dl.facts dt:last-of-type,dl.facts dd:last-of-type{border-bottom:0}
+.todo{display:block;border:1px dashed var(--molecular);padding:10px 12px;color:var(--ink);background:var(--molecular-soft);font-size:.93rem;border-radius:3px}
+.todo b{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;display:block;margin-bottom:2px}
+ul.tight{margin:0;padding-left:1.1em} ul.tight li{margin:2px 0}
+.tag{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+
+/* two-up for lesser records */
+.records{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:20px}
+.rec{background:var(--surface);border:1px solid var(--line);padding:18px;border-radius:4px;min-width:0}
+.rec h3{font-size:1.1rem;margin-top:8px}
+.rec p{margin:6px 0;font-size:.95rem}
+
+/* ledger */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.filters button{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:7px 12px;cursor:pointer;border-radius:3px}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tablebox{overflow-x:auto;border:1px solid var(--line);background:var(--surface);border-radius:4px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.93rem}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:500;background:var(--bg)}
+tr:last-child td{border-bottom:0}
+td.y{font-family:var(--mono);white-space:nowrap}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.cols>div{min-width:0}
+.cols h3{font-size:1.05rem;font-family:var(--mono);text-transform:uppercase;letter-spacing:.07em;font-weight:500;color:var(--muted)}
+.skills{list-style:none;margin:0;padding:0}
+.skills li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.skills span:last-child{font-family:var(--mono);font-size:12.5px;color:var(--muted);text-align:right}
+
+.story{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:36px}
+@media(max-width:760px){.story{grid-template-columns:1fr} dl.facts{grid-template-columns:1fr} dl.facts dt{border-bottom:0;padding-bottom:0} .bar{gap:6px 12px}}
+.story p{margin:0 0 14px;max-width:60ch}
+.pull{font-family:var(--display);font-size:1.5rem;line-height:1.2;letter-spacing:-.015em;border-left:4px solid var(--neural);padding-left:16px;margin:0}
+
+.contact{display:grid;gap:10px;max-width:520px}
+.contact .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.contact code{font-family:var(--mono);font-size:15px;background:var(--surface);border:1px solid var(--line);padding:8px 12px;border-radius:3px;user-select:all;overflow-wrap:anywhere}
+footer{margin-top:80px;border-top:1px solid var(--line);padding-block:24px 40px;color:var(--muted);font-size:.88rem}
+footer p{margin:4px 0;max-width:70ch}
+#toast{font-family:var(--mono);font-size:12px;color:var(--neural);min-height:1.2em}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.room a:hover{transform:none}}
+.scene-control{position:relative;z-index:2;display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:26px;font:10px var(--mono);letter-spacing:.12em;color:var(--muted)}.scene-control button{background:rgba(8,16,19,.68);color:var(--muted);border:1px solid var(--line);border-radius:2px;padding:7px 10px;font:10px var(--mono);text-transform:uppercase;letter-spacing:.08em;cursor:pointer}.scene-control button[aria-pressed="true"]{color:var(--neural);border-color:var(--neural);box-shadow:0 0 18px rgba(114,245,208,.1)}.scene-control button:hover{color:var(--ink);border-color:var(--neural)}/* Curiosity Engine visual system */
+:root{--bg:#070b10;--surface:#101820;--ink:#dce5ec;--muted:#91a1ad;--line:#26343b;--neural:#72f5d0;--neural-soft:#102d29;--molecular:#f4a66a;--molecular-soft:#35251c;--signal:#72f5d0;color-scheme:dark}
+:root[data-theme="light"]{--bg:#eef3f2;--surface:#fff;--ink:#10211f;--muted:#536660;--line:#c8d7d2;--neural:#087a67;--neural-soft:#dcefe9;--molecular:#a4541b;--molecular-soft:#f6e8dd;--signal:#176b9a;color-scheme:light}
+body{background:radial-gradient(ellipse at 78% 4%,rgba(32,110,91,.13),transparent 38%),var(--bg);line-height:1.65}
+header.top{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(18px);border-color:color-mix(in srgb,var(--line) 75%,transparent)}
+.brand{letter-spacing:.045em}.bar{min-height:68px}nav a{font-size:11px;letter-spacing:.12em}nav a:hover{color:var(--neural)}
+.atrium{min-height:620px;border-color:var(--line);background:radial-gradient(ellipse at 78% 42%,rgba(27,129,107,.17),transparent 42%),linear-gradient(115deg,transparent 45%,rgba(14,29,34,.3))}
+.atrium:after{content:"";pointer-events:none;position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 34%,transparent 76%),linear-gradient(0deg,var(--bg),transparent 30%);opacity:.92}
+.atrium .wrap{z-index:1;padding-block:104px 70px}.eyebrow{font-size:10px;letter-spacing:.19em;color:var(--neural)}
+h1{max-width:9ch;font-size:clamp(3.5rem,10vw,8rem);line-height:.86;letter-spacing:-.07em;perspective:700px;text-shadow:0 1px 0 #a8c9c1,0 2px 0 #6b8982,0 3px 0 #3d5d57,0 4px 0 #263d39,0 5px 0 #172925,0 16px 28px rgba(0,0,0,.62);transform:rotateX(7deg);transform-origin:left bottom}
+h1 span{color:var(--neural);text-shadow:0 1px 0 #b5fff0,0 2px 0 #76c9b4,0 3px 0 #428b79,0 4px 0 #235b4e,0 5px 0 #143c34,0 16px 28px rgba(0,0,0,.7);filter:drop-shadow(0 0 20px rgba(114,245,208,.18))}
+.lede{max-width:47ch;color:var(--muted);font-size:1.08rem}.lede b{color:var(--ink)}.btn{border-color:var(--line);background:rgba(12,20,24,.75);color:var(--ink);transition:transform .2s,border-color .2s,background .2s}.btn.primary{background:var(--neural);border-color:var(--neural);color:#07110f;font-weight:600}.btn:hover{transform:translateY(-2px);border-color:var(--neural)}
+.legend{position:relative;z-index:2}.chip{background:color-mix(in srgb,var(--surface) 86%,transparent)}
+section{padding-block:92px 10px}.rooms{gap:12px}.room a{min-height:204px;background:linear-gradient(145deg,color-mix(in srgb,var(--surface) 94%,var(--neural-soft)),var(--surface));border-color:var(--line);transition:transform .25s,border-color .25s,box-shadow .25s}.room a:hover,.room a:focus-visible{transform:translateY(-5px);border-color:var(--neural);box-shadow:0 18px 45px rgba(0,0,0,.22)}.room .k{letter-spacing:.08em;text-transform:uppercase;font-size:10px}.room strong{font-size:1.45rem;letter-spacing:-.035em}
+.dossier,.rec{border-color:var(--line);background:linear-gradient(145deg,var(--surface),color-mix(in srgb,var(--surface) 84%,var(--bg)))}.dossier{box-shadow:0 24px 70px rgba(0,0,0,.12)}.dossier>header{padding:30px}.dossier.n>header{background:linear-gradient(100deg,var(--neural-soft),transparent 75%)}.dossier.m>header{background:linear-gradient(100deg,var(--molecular-soft),transparent 75%)}dl.facts dt{color:var(--neural);font-size:10px}.todo{background:color-mix(in srgb,var(--molecular-soft) 70%,var(--surface))}.tablebox{border-color:var(--line)}th{background:var(--surface)}
+footer{border-color:var(--line);margin-top:100px}.theme{border-color:var(--line);color:var(--muted)}
+@media(max-width:760px){.atrium{min-height:590px}.atrium .wrap{padding-block:82px 54px}.atrium:after{background:linear-gradient(90deg,color-mix(in srgb,var(--bg) 88%,transparent),color-mix(in srgb,var(--bg) 50%,transparent)),linear-gradient(0deg,var(--bg),transparent 45%)}h1{font-size:clamp(3.4rem,15vw,6rem)}section{padding-top:68px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}/* Room bible: access chamber, shared facility language and focused room identities */
+.micro-label{position:absolute;right:var(--gutter-r);top:28px;z-index:2;color:var(--muted);font:10px var(--mono);letter-spacing:.11em;text-align:right}.micro-label span{display:block;color:var(--neural);margin-top:7px}
+.atrium:before{content:"";position:absolute;z-index:0;left:0;right:0;top:20%;height:1px;background:linear-gradient(90deg,transparent 10%,rgba(114,245,208,.7),transparent 92%);box-shadow:0 0 22px 3px rgba(114,245,208,.12);animation:scanline 8s ease-in-out infinite alternate;pointer-events:none}
+@keyframes scanline{from{transform:translateY(-55px);opacity:.24}to{transform:translateY(230px);opacity:.8}}
+.atrium .wrap{min-height:530px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.identity-line{font:14px var(--mono);letter-spacing:.04em;margin:22px 0 10px;color:var(--ink)}.identity-line span{color:var(--muted);font-size:12px}.tagline{font:clamp(1.25rem,3vw,2rem)/1.2 var(--display);letter-spacing:-.025em;margin:0;color:var(--ink)}.tagline em{font-style:normal;color:var(--neural)}
+.atrium .wrap:after{content:"ILLUSTRATIVE SPECIMEN / NOT A SCIENTIFIC MODEL";position:absolute;right:var(--gutter-r);bottom:23px;color:var(--muted);font:9px var(--mono);letter-spacing:.13em;opacity:.8}
+.facility-map{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}.facility-map .room a{position:relative;overflow:hidden}.facility-map .room a:after{content:"";position:absolute;width:110px;height:110px;border:1px solid color-mix(in srgb,var(--neural) 24%,transparent);border-radius:50%;right:-48px;top:-48px;box-shadow:0 0 30px color-mix(in srgb,var(--neural) 9%,transparent),inset 0 0 24px color-mix(in srgb,var(--neural) 8%,transparent);pointer-events:none}.facility-map .room:nth-child(2n) a:after{border-radius:4px;transform:rotate(35deg);border-color:color-mix(in srgb,var(--molecular) 28%,transparent)}
+#beyond{--room-accent:#72f5d0}#hemomaap{--room-accent:#f4a66a}#isravia{--room-accent:#72f5d0}#solace{--room-accent:#f4a66a}#beyond>header,#hemomaap>header,#isravia>header,#solace>header{border-left:2px solid var(--room-accent)}.room-preview{margin:0 24px 18px;padding:18px;background:color-mix(in srgb,var(--surface) 86%,var(--neural-soft));border:1px solid var(--line);border-radius:3px}.room-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}.room-tabs button{background:transparent;border:1px solid var(--line);color:var(--muted);padding:7px 10px;font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.room-tabs button[aria-selected="true"]{color:var(--neural);border-color:var(--neural)}.room-preview p{margin:0;max-width:70ch;color:var(--ink)}
+@media(max-width:760px){.micro-label{position:relative;right:auto;top:auto;align-self:flex-end;margin:0 0 18px}.atrium .wrap{min-height:540px;padding-block:44px 70px}.atrium .wrap:after{left:var(--gutter-l);right:auto;bottom:12px;font-size:8px}.atrium:after{background:linear-gradient(90deg,color-mix(in srgb,var(--bg) 90%,transparent),color-mix(in srgb,var(--bg) 58%,transparent)),linear-gradient(0deg,var(--bg),transparent 45%)}.identity-line{margin-top:18px}}
+@media(prefers-reduced-motion:reduce){.atrium:before{animation:none}}</style>
+
+<a class="skip" href="#research">Skip to research</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#atrium">Shraavya Mishra</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#research">Rooms</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+  </div>
+</header>
+
+<main id="atrium">
+  <div class="atrium">
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <p class="eyebrow">SHRAAVYA MISHRA / RESEARCH FACILITY · ACCESS CHAMBER 00</p><p class="micro-label">FACILITY DESIGNATION / CE—01 <span>STATUS: OPEN ACCESS</span></p>
+      <h1>Shraavya <span>Mishra</span></h1>
+      <p class="identity-line">Shraavya Mishra <span>· Student researcher · Builder</span></p><p class="tagline">Investigating the unseen.<br><em>Engineering what comes next.</em></p><p class="lede">I build computational and engineering systems to investigate difficult questions—from biological signals and molecular behaviour to accessible technology and energy-aware computing.</p>
+      <div class="cta">
+        <a class="btn primary" href="#research">Enter the lab</a>
+        <a class="btn" href="#research">Explore research</a>
+        <a class="btn" href="#cv">View CV / archive</a>
+      </div>
+      <div class="scene-control" aria-label="Specimen view">
+        <span>SPECIMEN /</span>
+        <button type="button" data-scene="neural" aria-pressed="true">Signal</button>
+        <button type="button" data-scene="molecular" aria-pressed="false">Molecule</button>
+        <button type="button" data-scene="network" aria-pressed="false">Systems</button>
+      </div>
+      <div class="legend" aria-label="Status key">
+        <span class="chip ongoing">Ongoing</span>
+        <span class="chip proposed">Proposed</span>
+        <span class="chip published">Published</span>
+        <span class="chip listed">Listed</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+  <section id="research" aria-labelledby="rh">
+    <p class="eyebrow">The atrium</p>
+    <h2 id="rh">The central atrium</h2>
+    <p class="intro">A connected facility for different ways of investigating the world. Choose a wing to enter its project records; every route also works as an ordinary page link.</p>
+    <ul class="rooms facility-map">
+      <li class="room n"><a href="#beyond"><span class="k">02 / Neural laboratory</span><strong>Signals &amp; sound</strong><p>Beyond the Face · CalmO</p><span class="chip proposed">Room 02</span></a></li>
+      <li class="room s"><a href="#hemomaap"><span class="k">03 / Microscopy</span><strong>Image analysis</strong><p>HemoMaap · biomedical computer vision</p><span class="chip ongoing">Room 03</span></a></li>
+      <li class="room s"><a href="#isravia"><span class="k">04 / Communication</span><strong>Human interfaces</strong><p>I-SRAVIA · SanGo</p><span class="chip ongoing">Room 04</span></a></li>
+      <li class="room m"><a href="#solace"><span class="k">05 / Molecular lab</span><strong>Models &amp; molecules</strong><p>SOLACE · ProtMut</p><span class="chip proposed">Room 05</span></a></li>
+      <li class="room s"><a href="#scheduler"><span class="k">06 / Computation observatory</span><strong>Systems research</strong><p>CPU scheduler benchmarking · UCSC</p><span class="chip listed">Room 06</span></a></li>
+      <li class="room s"><a href="#suchak"><span class="k">07 / Field station</span><strong>Engineering in context</strong><p>SUCHAK · ADIONA</p><span class="chip listed">Room 07</span></a></li>
+      <li class="room m"><a href="#publications"><span class="k">08 / Research archive</span><strong>Records &amp; recognition</strong><p>Publications · awards · scholarships · IP</p><span class="chip published">Room 08</span></a></li>
+      <li class="room n"><a href="#about"><span class="k">09 / Observation deck</span><strong>About &amp; timeline</strong><p>Education · motivation · contact</p><span class="chip listed">Room 09</span></a></li>
+    </ul>
+    <!-- Beyond the Face -->
+    <article class="dossier n" id="beyond" aria-labelledby="bh">
+      <header>
+        <div class="meta"><span class="chip proposed">Proposed</span><span class="tag">EEG · rehabilitation</span></div>
+        <h3 id="bh">Beyond the Face</h3>
+        <p class="sub">A proposed project on EEG-based approaches to rehabilitation. It is not yet a completed piece of work, and this page does not claim results.</p>
+        <div class="room-preview"><div class="room-tabs" role="tablist" aria-label="Beyond the Face dossier views"><button type="button" role="tab" aria-selected="true" data-room-tab="question">Question</button><button type="button" role="tab" aria-selected="false" data-room-tab="methods">Methods</button><button type="button" role="tab" aria-selected="false" data-room-tab="evidence">Evidence</button><button type="button" role="tab" aria-selected="false" data-room-tab="limits">Limitations</button></div><p id="room-preview-copy" role="tabpanel" aria-live="polite">Can EEG-derived information offer a useful complement to facial expression in rehabilitation research connected to Moebius syndrome?</p></div>
+      </header>
+      <dl class="facts">
+        <dt>Status</dt><dd>Proposed. No outcome, accuracy figure or participant data exists to report.</dd>
+        <dt>Motivation</dt><dd>Facial expression alone may not communicate every emotional response. This research concept asks whether EEG-derived information could provide a complementary signal for rehabilitation research, with the people affected and their needs at the centre.</dd>
+        <dt>Related prior work</dt><dd>CalmO, a brainwave-controlled music synthesizer (neurotechnology interface, signal processing, human-computer interaction). See <a href="#more">More projects</a>.</dd>
+        <dt>Proposed methods</dt><dd>Planned pipeline: identify an appropriate, documented EEG dataset; define preprocessing and artifact handling; extract features; compare candidate models using a held-out validation design. These steps remain proposed until documented in the project record.</dd>
+        <dt>Limitations</dt><dd>EEG signals are noisy and emotion-related labels are imperfect. A model prediction is not a direct reading of subjective experience. Results from a general dataset cannot establish validity for people with Moebius syndrome or improve rehabilitation outcomes.</dd>
+        <dt>Validation needed</dt><dd>Any future claim would require transparent dataset provenance, appropriate held-out evaluation, uncertainty and failure analysis, participant-informed measures, ethical review and population-specific validation with relevant clinical oversight.</dd>
+        <dt>My contribution</dt><dd>I developed the research concept and proposed methodology, including the use of EEG-based analysis to investigate neurological patterns beyond externally observable facial characteristics. I conducted a preliminary literature review and helped define the research question, potential experimental framework and analytical approach. The project is presented as a proposed research concept, not a completed experimental study.</dd>
+      </dl>
+    </article>
+
+    <!-- SOLACE -->
+    <article class="dossier m" id="solace" aria-labelledby="sh">
+      <header>
+        <div class="meta"><span class="chip listed">Manuscript submitted</span><span class="tag">Cureus · AI-augmented research · computational chemistry</span></div>
+        <h3 id="sh">SOLACE</h3>
+        <p class="sub">Solubility Optimization through Learning, Analysis and Computational Estimation: machine-learning prediction of aqueous solubility from molecular descriptors. Manuscript submitted to Cureus (AI-augmented research); not yet peer reviewed or published.</p>
+      </header>
+      <dl class="facts">
+        <dt>Status</dt><dd>Manuscript submitted to Cureus for AI-augmented research. Not yet peer reviewed or published.</dd>
+        <dt>Research question</dt><dd>Can machine-learning models trained on molecular descriptors accurately predict the aqueous solubility of chemical compounds, and provide an accessible computational tool for early-stage solubility estimation?</dd>
+        <dt>Related prior work</dt><dd>ProtMut, a molecular dynamics simulator for mutant protein structure and function (Python, OpenMM, Flask, AlphaFold-2), mentored by Prof. Sudipta Tung. See <a href="#more">More projects</a>.</dd>
+        <dt>Methods</dt><dd>Curate and clean aqueous solubility data from AqSolDB, generate molecular descriptors with RDKit, and train and compare regression models (Linear Regression, Random Forest, Gradient Boosting) on held-out test data, using R&sup2;, RMSE, MAE and correlation metrics. The best-performing model is integrated into a user-friendly prediction workflow.</dd>
+        <dt>Limitations</dt><dd>The model is limited by the quality, size and chemical diversity of the available dataset. Experimental conditions across reported solubility measurements vary, which introduces noise. Predictions based on a limited set of molecular descriptors may not capture all factors that influence real-world solubility.</dd>
+        <dt>Validation needed</dt><dd>Validation on independent external datasets and experimentally measured compounds is needed to assess generalisability. Comparing predictions with laboratory-generated solubility measurements would give stronger evidence of real-world performance.</dd>
+        <dt>My contribution</dt><dd>I developed the computational workflow, including dataset curation and preprocessing, descriptor generation with RDKit, machine-learning model development and optimisation, performance evaluation, and interpretation of results. I also contributed to developing SOLACE as an accessible framework for predicting aqueous solubility.</dd>
+      </dl>
+    </article>
+
+    <!-- I-SRAVIA -->
+    <article class="dossier" id="isravia" aria-labelledby="ih">
+      <header>
+        <div class="meta"><span class="chip ongoing">Ongoing</span><span class="chip published">Paper published</span><span class="tag">2022 to date</span></div>
+        <h3 id="ih">I-SRAVIA</h3>
+        <p class="sub">Indian Sign Language Responsive And Voice Intelligent Assistant. Two-way communication between ISL and text or voice, with speech-to-text in real time.</p>
+      </header>
+      <dl class="facts">
+        <dt>Status</dt><dd>Ongoing since 2022. Founder-led venture.</dd>
+        <dt>Method</dt><dd>Computer vision and machine learning. Stack: Python, OpenCV, TensorFlow, MediaPipe, Flask.</dd>
+        <dt>Publication</dt><dd>Mishra, S., and Karjee, S. “I-SRAVIA: Breaking The Wall Of Silence: Prototyping, Testing and Validating.” 5th Indian International Conference on Industrial Engineering and Operations Management, 2025. <a href="https://doi.org/10.46254/IN05.20250095" rel="noopener">DOI 10.46254/IN05.20250095</a></dd>
+        <dt>Funding</dt><dd>Raised INR 1.44 lakhs, as stated on the CV.</dd>
+        <dt>Intellectual property</dt><dd>Trademark application numbers 7180895 (Class 10) and 7180896 (Class 42). Check registration status in the public trademark register.</dd>
+        <dt>Recognition</dt><dd>DST-INSPIRE MANAK NLEPC national award winner, 2024.</dd>
+        <dt>Limitations</dt><dd>Performance may be affected by lighting, camera angle, hand orientation, signing speed and individual signing styles. The model is also limited by the size and diversity of its training data, and may not yet generalise to a broad range of users or to continuous, real-world sign-language conversation.</dd>
+        <dt>Validation needed</dt><dd>The model should be tested with a larger and more diverse group of signers, including people not represented in the training data, in different environments and against additional sign-language datasets, to assess robustness and real-world applicability.</dd>
+      </dl>
+    </article>
+
+    <!-- HemoMaap -->
+    <article class="dossier" id="hemomaap" aria-labelledby="hh">
+      <header>
+        <div class="meta"><span class="chip ongoing">Ongoing</span><span class="tag">2025 to date</span></div>
+        <h3 id="hh">HemoMaap</h3>
+        <p class="sub">Hemo (blood) and Maap (measurement, size, standard). A complete blood count analyser and sickle cell detection tool.</p>
+      </header>
+      <dl class="facts">
+        <dt>Status</dt><dd>Ongoing since 2025.</dd>
+        <dt>Mentor</dt><dd>Prof. Hari Shroff, HHMI Janelia.</dd>
+        <dt>Method</dt><dd>Computer-vision analysis of medical images. Stack: Cellpose, Flask.</dd>
+        <dt>Limitations</dt><dd>The approach is constrained by the size and diversity of the available blood-smear image dataset. Image quality, staining differences, microscope settings, and overlapping or irregularly shaped cells may affect segmentation and classification. It is a screening and research-support tool and needs further clinical validation before any diagnostic use.</dd>
+        <dt>Validation needed</dt><dd>The model needs evaluation on larger, independent datasets with images from different laboratories and imaging conditions. Validation against expert annotations and clinically confirmed samples is needed to assess robustness, sensitivity and real-world generalisability.</dd>
+        <dt>My contribution</dt><dd>I designed and developed the computational pipeline, including image preprocessing, cell segmentation using computer-vision techniques, individual cell extraction, and a machine-learning workflow to distinguish normal from sickle-shaped cells. I also worked on turning the pipeline into a prototype application that estimates the proportion of affected cells.</dd>
+      </dl>
+    </article>
+
+    <!-- More -->
+    <div id="more" style="padding-top:36px">
+      <h3>More projects</h3>
+      <p class="intro" style="margin-bottom:0">Descriptions are taken from the CV. Add outcomes only where there is evidence.</p>
+      <div class="records">
+        <article class="rec"><span class="chip ongoing">Ongoing · 2025</span><h3>ProtMut</h3><p>Molecular dynamics simulator for mutant protein structural and functional prediction.</p><p class="tag">Python · OpenMM · Flask · AlphaFold-2 · Mentor: Prof. Sudipta Tung</p><p><b>Limitations.</b> Limited by the availability and quality of structural and biological data; in silico predictions need experimental interpretation and are not direct evidence of biological outcomes.</p><p><b>Validation needed.</b> Comparison with experimentally characterised mutations and benchmark datasets, and with established computational tools.</p></article>
+        <article class="rec"><span class="chip ongoing">Ongoing · 2025</span><h3>SUCHAK</h3><p>AgriTech and sustainability initiative: smart agriculture solutions using analytics and web systems. Co-founded; the idea was selected for funding by Ashoka University LGP.</p><p class="tag">IoT · Python</p><p><b>Limitations.</b> Performance may depend on environmental variability, sensor calibration, crop species and changing soil and weather conditions; long-term durability and scalability need further testing.</p><p><b>Validation needed.</b> Extended field trials across crops, locations and seasons, with sensor readings compared against established agricultural methods.</p></article>
+        <article class="rec"><span class="chip listed">Listed</span><h3>SanGo</h3><p>A mental health app by students, for students. A chatbot with sentiment analysis, built for Rashtriya Bal Vigyanik Pradarshini.</p><p><b>Method.</b> A student-focused conversational support system using natural-language processing to give supportive, non-clinical responses and direct users to trusted support when needed.</p><p><b>Limitations.</b> A chatbot cannot understand emotions or circumstances as deeply as a qualified human professional and is not a replacement for professional or trusted human support.</p><p><b>Validation needed.</b> Structured usability testing with students, and expert review of its response and escalation framework.</p></article>
+        <article class="rec" id="adiona"><span class="chip listed">Listed</span><h3>ADIONA</h3><p>Drone hardware design and prototype with computer-vision detection. External GPU resources secured through independent institutional outreach. Built for the World Robotics Olympiad.</p><p><b>Method.</b> A drone captures images of an industrial environment and a computer-vision model flags potential injuries or emergencies for human attention. It is an assistive monitoring tool, not an autonomous decision-maker.</p><p><b>Limitations.</b> Detection can be affected by lighting, angle, distance, occlusion and weather, may give false positives or misses, and cannot judge the severity or medical nature of an injury.</p><p><b>Validation needed.</b> Testing on realistic industrial scenarios with accuracy and false-positive/negative rates, plus safety, privacy and regulatory evaluation before any deployment.</p></article>
+        <article class="rec" id="calmo"><span class="chip listed">Listed</span><h3>CalmO</h3><p>A brainwave-controlled music synthesizer: a neurotechnology interface for music generation, exploring signal processing and human-computer interaction.</p><p><b>Limitations.</b> Effectiveness may vary substantially between individuals, because physiological and emotional responses to music are highly personal. Sensor noise, limited training data, and the difficulty of inferring emotional state from multimodal inputs may affect performance.</p><p><b>Validation needed.</b> Controlled user studies comparing adaptive and non-adaptive music experiences, with physiological signals, voluntary feedback and standardised measures of user experience, in a larger and more diverse group.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="scheduler" aria-labelledby="schh"><p class="eyebrow">Room 06 / Computation observatory</p><h2 id="schh">Scheduler benchmarking</h2><p class="intro">A systems research record associated with the UC Santa Cruz Science Internship Programme. The benchmark console belongs here when the tested configurations, workloads, measurements and reproducibility materials are ready. No performance or energy results are fabricated in this preview.</p><span class="chip listed">Research record · evidence to add</span></section>
+
+  <section id="publications" aria-labelledby="ph">
+    <p class="eyebrow">Publications and IP</p>
+    <h2 id="ph">One paper, two trademark applications</h2>
+    <div class="records" style="margin-top:0">
+      <article class="rec"><span class="chip published">Published</span><h3>Conference paper</h3><p>Mishra, S., and Karjee, S. “I-SRAVIA: Breaking The Wall Of Silence: Prototyping, Testing and Validating.” 5th Indian International Conference on Industrial Engineering and Operations Management, 2025.</p><p><a href="https://doi.org/10.46254/IN05.20250095" rel="noopener">doi.org/10.46254/IN05.20250095</a></p></article>
+      <article class="rec"><span class="chip listed">Application numbers listed</span><h3>Trademarks</h3><p>Class 10: 7180895<br>Class 42: 7180896</p><p>Verify status and owner in the public register before relying on these.</p></article>
+      <article class="rec"><span class="chip listed">Profile</span><h3>Google Scholar</h3><p><a href="https://scholar.google.com/citations?user=Alf7m2UAAAAJ&hl=en&oi=ao" rel="noopener">Open Scholar profile</a></p></article>
+    </div>
+  </section>
+
+  <section id="cv" aria-labelledby="ch">
+    <p class="eyebrow">The archive</p>
+    <h2 id="ch">Every claim, with its evidence state</h2>
+    <p class="intro">All entries come from the CV. Filter by type.</p>
+    <div class="filters" role="group" aria-label="Filter the archive">
+      <button type="button" aria-pressed="true" data-f="all">All</button>
+      <button type="button" aria-pressed="false" data-f="Award">Awards</button>
+      <button type="button" aria-pressed="false" data-f="Programme">Programmes</button>
+      <button type="button" aria-pressed="false" data-f="Scholarship">Scholarships</button>
+      <button type="button" aria-pressed="false" data-f="Venture">Ventures</button>
+      <button type="button" aria-pressed="false" data-f="Education">Education</button>
+    </div>
+    <div class="tablebox" tabindex="0" role="region" aria-label="Archive table">
+    <table>
+      <thead><tr><th>Year</th><th>Type</th><th>Record</th><th>Evidence</th></tr></thead>
+      <tbody id="ledger">
+        <tr data-t="Award"><td class="y">2024</td><td>Award</td><td>DST-INSPIRE MANAK NLEPC, national award winner</td></tr>
+        <tr data-t="Award"><td class="y">2026</td><td>Award</td><td>AI Vidyasetu 1.0, zonal winner and top 10 nationally</td></tr>
+        <tr data-t="Award"><td class="y">2026</td><td>Award</td><td>LovHack Season 2, global hackathon winner</td></tr>
+        <tr data-t="Award"><td class="y">n/d</td><td>Award</td><td>National Finance Olympiad, top 20 nationally</td></tr>
+        <tr data-t="Programme"><td class="y">2026</td><td>Programme</td><td>Science Internship Programme, University of California, Santa Cruz</td></tr>
+        <tr data-t="Programme"><td class="y">2026</td><td>Programme</td><td>Sakura Japan Student Exchange Programme (DST, Government of India)</td></tr>
+        <tr data-t="Programme"><td class="y">2025, 2026</td><td>Programme</td><td>Ashoka University Lodha Genius Programme, summer STEM programme and fellow</td></tr>
+        <tr data-t="Programme"><td class="y">n/d</td><td>Programme</td><td>Software Technology Parks of India (STPI) EmTek CoE, Cohort 3 selection</td></tr>
+        <tr data-t="Scholarship"><td class="y">2025–26</td><td>Scholarship</td><td>Lodha Genius Scholarship</td></tr>
+        <tr data-t="Scholarship"><td class="y">2026</td><td>Scholarship</td><td>Science Internship Program, UCSC</td></tr>
+        <tr data-t="Scholarship"><td class="y">2022–26</td><td>Scholarship</td><td>Kendriya Vidyalaya Single Girl Child Scholarship</td></tr>
+        <tr data-t="Venture"><td class="y">2022–</td><td>Venture</td><td>Founder, I-SRAVIA. Raised INR 1.44 lakhs</td><td><span class="chip listed">Funding source to document</span></td></tr>
+        <tr data-t="Venture"><td class="y">2025–</td><td>Venture</td><td>Co-founder, SUCHAK. Idea selected for funding by Ashoka University LGP</td></tr>
+        <tr data-t="Education"><td class="y">n/d</td><td>Education</td><td>Kendriya Vidyalaya No. 2, Bhubaneswar (CBSE). Class X: 96%</td><td><span class="chip listed">Marksheet on request</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="cols" style="margin-top:44px">
+      <div>
+        <h3>Skills, as rated on the CV</h3>
+        <ul class="skills">
+          <li><span>Python</span><span>advanced</span></li>
+          <li><span>JavaScript, HTML, CSS</span><span>basic</span></li>
+          <li><span>OpenCV, biomedical image processing</span><span>working</span></li>
+          <li><span>ML foundations</span><span>basic</span></li>
+          <li><span>Flutter, Firebase, Flask</span><span>basic</span></li>
+          <li><span>IoT, 3D modelling</span><span>basic</span></li>
+          <li><span>Molecular simulation, data validation</span><span>research tools</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Wet lab and people</h3>
+        <ul class="tight">
+          <li>Laboratory work and equipment handling</li>
+          <li>Microbiological techniques: streaking, plating, media preparation</li>
+          <li>Leadership, communication, teamwork</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="ah">
+    <p class="eyebrow">Why</p>
+    <h2 id="ah">Begin early, think deeply, build before expectations are set</h2>
+    <div class="story">
+      <div>
+        <p>I was born at 28 weeks because of severe preeclampsia, and I survived because of advances in modern medicine. That beginning shaped my purpose.</p>
+        <p>I started my entrepreneurial journey at age 12. Since then I have raised about INR 1.4 lakhs and led nationally recognised, research-backed projects. I work across artificial intelligence, biomedical computation and engineering systems, and I want my methods to be rigorous, my impact to scale, and my contribution to last.</p>
+      </div>
+      <p class="pull">The evidence for each part of the story should stand on its own.</p>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="coh">
+    <p class="eyebrow">Contact</p>
+    <h2 id="coh">Write to me</h2>
+    <div class="contact">
+      <div class="row"><code id="mail">shraavyamishra@gmail.com</code><button class="btn" id="copy" type="button">Copy address</button></div>
+      <div id="toast" role="status" aria-live="polite"></div>
+      <p style="margin:0"><a href="CV_Shraavya_1-1.pdf" target="_blank" rel="noopener">1-pager CV</a> · <a href="https://www.linkedin.com/in/shraavya-mishra-197114218/" rel="noopener">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=Alf7m2UAAAAJ&hl=en&oi=ao" rel="noopener">Google Scholar</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>No animation or 3D is needed to reach any section. The signal field above respects reduced-motion settings.</p>
+  </footer>
+  </div>
+</main>
+
+<script>
+(function(){
+  // theme toggle
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var saved=localStorage.getItem('ce_theme');if(saved==='light')root.setAttribute('data-theme','light')}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=getComputedStyle(root).getPropertyValue('--bg').trim()==='#070b10';
+    var newTheme=dark?'light':'dark';
+    root.setAttribute('data-theme',newTheme);
+    try{localStorage.setItem('ce_theme',newTheme)}catch(e){}
+    setTimeout(draw0,0);
+  });
+
+  // ledger filter
+  var fb=document.querySelectorAll('.filters button'),rows=document.querySelectorAll('#ledger tr');
+  fb.forEach(function(b){b.addEventListener('click',function(){
+    fb.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    var f=b.dataset.f;
+    rows.forEach(function(r){r.hidden=!(f==='all'||r.dataset.t===f)});
+  })});
+
+  // Beyond the Face reading panel; all views retain the proposed status.
+  var roomCopy={question:"Can EEG-derived information offer a useful complement to facial expression in rehabilitation research connected to Moebius syndrome?",methods:"Proposed only: document an appropriate dataset, define preprocessing and artifact handling, extract features, then evaluate candidate models with a held-out design. No acquisition or model result is claimed here.",evidence:"No findings, participant data, dataset-specific metrics or validated rehabilitation outcomes are available to report in this dossier yet.",limits:"EEG does not directly reveal subjective emotion. General-dataset performance would not establish validity for people with Moebius syndrome or clinical benefit; population-specific evidence and ethical oversight would be required."};
+  document.querySelectorAll("[data-room-tab]").forEach(function(tab){tab.addEventListener("click",function(){document.querySelectorAll("[data-room-tab]").forEach(function(x){x.setAttribute("aria-selected",x===tab?"true":"false")});document.getElementById("room-preview-copy").textContent=roomCopy[tab.dataset.roomTab]})});
+  // copy email
+  document.getElementById('copy').addEventListener('click',function(){
+    var t=document.getElementById('toast'),m=document.getElementById('mail');
+    function sel(){var r=document.createRange();r.selectNodeContents(m);var s=getSelection();s.removeAllRanges();s.addRange(r);t.textContent='Address selected. Press copy on your device.'}
+    try{navigator.clipboard.writeText(m.textContent).then(function(){t.textContent='Copied.'},sel)}catch(e){sel()}
+  });
+
+  // signal field: three EEG-like traces plus a drifting molecular lattice
+  var cv=document.getElementById('field'),cx=cv.getContext('2d'),W=0,H=0,dpr=1,raf=0,t0=0;
+  var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nodes=[];var sceneMode="neural";for(var i=0;i<26;i++)nodes.push({x:Math.random(),y:Math.random(),p:Math.random()*6.28});
+  document.querySelectorAll("[data-scene]").forEach(function(b){b.addEventListener("click",function(){sceneMode=b.dataset.scene;document.querySelectorAll("[data-scene]").forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});draw0()})});
+  function col(n){return getComputedStyle(root).getPropertyValue(n).trim()}
+  function size(){var r=cv.parentNode.getBoundingClientRect();dpr=Math.min(2,devicePixelRatio||1);W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)}
+  function draw(t){
+    cx.clearRect(0,0,W,H);
+    var n=col('--neural'),m=col('--molecular'),l=col('--line');
+    // lattice
+    cx.lineWidth=1;
+    for(var i=0;i<nodes.length;i++){var a=nodes[i],ax=(a.x*W+Math.sin(t/4000+a.p)*10),ay=(a.y*H+Math.cos(t/5000+a.p)*10);a.px=ax;a.py=ay}
+    cx.strokeStyle=m;cx.globalAlpha=.22;
+    for(i=0;i<nodes.length;i++)for(var j=i+1;j<nodes.length;j++){var dx=nodes[i].px-nodes[j].px,dy=nodes[i].py-nodes[j].py;if(dx*dx+dy*dy<140*140){cx.beginPath();cx.moveTo(nodes[i].px,nodes[i].py);cx.lineTo(nodes[j].px,nodes[j].py);cx.stroke()}}
+    cx.globalAlpha=.55;cx.fillStyle=m;
+    for(i=0;i<nodes.length;i++){cx.beginPath();cx.arc(nodes[i].px,nodes[i].py,2.5,0,6.28);cx.fill()}
+    // traces
+    var base=[.72,.82,.92],amp=[16,10,7],fr=[.011,.019,.031];
+    for(var k=0;k<3;k++){
+      cx.beginPath();cx.strokeStyle=n;cx.globalAlpha=.75-k*.2;cx.lineWidth=k===0?2:1.4;
+      for(var x=0;x<=W;x+=3){
+        var y=H*base[k]+Math.sin(x*fr[k]+t/(700+k*300))*amp[k]+Math.sin(x*fr[k]*2.7+t/400)*amp[k]*.4+Math.sin(x*.0043+k)*amp[k]*.6;
+        x===0?cx.moveTo(x,y):cx.lineTo(x,y);
+      }
+      cx.stroke();
+    }
+    // Projected 3D specimen: the view changes between signal, molecule and systems.
+    var ox=W*.79,oy=H*(W<720?.39:.43),rad=Math.min(W*(W<720?.2:.19),H*.32),rot=t*.00022;
+    function project(v){var x=v[0]*Math.cos(rot)-v[2]*Math.sin(rot),z=v[0]*Math.sin(rot)+v[2]*Math.cos(rot),y=v[1]*Math.cos(rot*.6)-z*Math.sin(rot*.6);z=v[1]*Math.sin(rot*.6)+z*Math.cos(rot*.6);var q=3.4/(3.4+z);return [ox+x*rad*q,oy+y*rad*q,q]}
+    cx.save();cx.strokeStyle=sceneMode==="molecular"?m:n;cx.fillStyle=sceneMode==="molecular"?m:n;cx.lineWidth=1;
+    var pts=[];
+    if(sceneMode==="molecular"){for(var a=0;a<18;a++){var lat=Math.acos(1-2*(a+.5)/18),lon=Math.PI*(1+Math.sqrt(5))*a;pts.push([Math.sin(lat)*Math.cos(lon)*.82,Math.cos(lat)*.82,Math.sin(lat)*Math.sin(lon)*.82])}}
+    else{for(var a=0;a<52;a++){var lat=-Math.PI/2+Math.PI*a/51,lon=a*2.399;pts.push([Math.cos(lat)*Math.cos(lon),Math.sin(lat),Math.cos(lat)*Math.sin(lon)])}}
+    for(var a=0;a<pts.length;a++){var P=project(pts[a]);cx.globalAlpha=.82;cx.beginPath();cx.arc(P[0],P[1],Math.max(1.5,3*P[2]),0,6.28);cx.fill();for(var b=a+1;b<pts.length;b++){var dx=pts[a][0]-pts[b][0],dy=pts[a][1]-pts[b][1],dz=pts[a][2]-pts[b][2],threshold=sceneMode==="molecular"?.5:(sceneMode==="network"?.55:.29);if(dx*dx+dy*dy+dz*dz<threshold){var Q=project(pts[b]);cx.globalAlpha=.18+(P[2]+Q[2])*.13;cx.beginPath();cx.moveTo(P[0],P[1]);cx.lineTo(Q[0],Q[1]);cx.stroke()}}}
+    cx.globalAlpha=.42;cx.beginPath();cx.ellipse(ox,oy,rad*1.28,rad*.36,-.32,0,6.28);cx.stroke();cx.restore();
+    cx.globalAlpha=1;
+  }
+  function loop(t){draw(t);raf=requestAnimationFrame(loop)}
+  function draw0(){size();draw(2000)}
+  function start(){cancelAnimationFrame(raf);size();if(still){draw(2000)}else{raf=requestAnimationFrame(loop)}}
+  addEventListener('resize',function(){size();if(still)draw(2000)});
+  document.addEventListener('visibilitychange',function(){if(document.hidden)cancelAnimationFrame(raf);else if(!still)raf=requestAnimationFrame(loop)});
+  start();
+})();
+</script>
+
+</body></html>
